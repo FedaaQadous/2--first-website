@@ -1,0 +1,43 @@
+.custom-input {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.custom-input input,
+.custom-input textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+.custom-input label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.custom-input input:focus,
+.custom-input textarea:focus {
+  border-bottom: 2px solid #28a745;
+}
+
+.custom-input input:focus + label,
+.custom-input input:not(:placeholder-shown) + label,
+.custom-input textarea:focus + label,
+.custom-input textarea:not(:placeholder-shown) + label {
+  top: -15px;
+  font-size: 13px;
+  color: #28a745;
+}
+
